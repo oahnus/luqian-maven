@@ -40,7 +40,7 @@
 ## deploy
 
 ```shell
-mvn clean deploy -Dmaven.test.skip  -DaltDeploymentRepository=self-mvn-repo::default::file:C:\D\Projects\maven-repo\repository
+mvn clean deploy -Dmaven.test.skip -DaltDeploymentRepository=self-mvn-repo::default::file:C:\D\Projects\maven-repo\repository
 ```
 
 C:\D\Projects\maven-repo\repository 为本地目录
