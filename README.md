@@ -22,25 +22,10 @@
 </project>
 ```
 
-区分release or snapshot
-
-```xml
-<repositories>
-  <repository>
-    <id>luqian-maven-repo-snapshot</id>
-    <url>https://raw.github.com/oahnus/luqian-maven/snapshot/repository</url>
-  </repository>
-  <repository>
-    <id>luqian-maven-repo-release</id>
-    <url>https://raw.github.com/oahnus/luqian-maven/release/repository</url>
-  </repository>
-</repositories>
-```
-
 ## deploy
 
+在项目文件目录下运行
 ```shell
 mvn clean deploy -Dmaven.test.skip -DaltDeploymentRepository=self-mvn-repo::default::file:C:\D\Projects\maven-repo\repository
 ```
-
-C:\D\Projects\maven-repo\repository 为本地目录
+> C:\D\Projects\maven-repo\repository 为本地目录
